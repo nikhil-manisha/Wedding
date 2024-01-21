@@ -125,7 +125,7 @@
             font-size: 60px;
         }
         .rsvp h2{
-            font-size: 30px;
+            font-size: 20px;
             margin: 2px;
         }
         .thnks{
@@ -138,6 +138,18 @@
         }
         audio {
       display: none;
+    }
+    .names p{
+        font-size: 40px;
+    }
+    .names .sng{
+        font-size: 20px;
+    }
+    .date-month{
+        font-size: 20px;
+    }
+    .sagai-text h2{
+        font-size: 20px;
     }
 
     /* Style the play button */
@@ -173,14 +185,16 @@
     </div>
     <div class="names">
         <img src="top_leaves.png">
-       <p>Nikhil</p>
-       <p>-&-</p>
-       <p>Manisha</p>
+       <p>
+        निखिल</p>
+       <p class="sng">-संग-</p>
+       <p>
+        मनीषा</p>
        <img src="bottom_leaves.png">
     </div>
     <div class="wed-date">
         <div>
-            <h2>6 February 2024</h2>
+            <h2>6 <span class="date-month">फ़रवरी</span> 2024</h2>
         </div>
         <div id="timer"></div>
     </div>
@@ -189,10 +203,11 @@
         <img src="sagai.png">
     </div>
     <div class="sagai-text">
-            <h2>4 February 2024</h2>
-            <h3>Lunch : 11 Am Onwards</h3>
-            <h3>Sagai : 03 Pm Onwards</h3>
-            <h2>Venue :- Tikri, Meerut</h2>
+            <h2>4 <span class="date-month">फ़रवरी</span> 2024</h2>
+            <h3>प्रीतिभोज : 11:00 बजे प्रात</h3>
+            <h3>
+                सागाई : 03:00 बजे शाम</h3>
+            <h2>विवाह स्थल :- टीकरी, मेरठ</h2>
     </div>
 </div>
 <div class="nimantran-main">
@@ -200,23 +215,28 @@
         <img src="476-4760075_transparent-wedding-symbol-clipart-line-art-hd-png.png">
     </div>
     <div class="nim-text">
-        <h2>Nikhil</h2>
-        <h4>S/o Smt. Babita &</h4>
-        <h4>Lt. Shri. Sanjeev</h4>
-        <h3>-weds-</h3>
-        <h2>Manisha</h2>
-        <h4>D/o Smt. Mukesh &</h4>
-        <h4>Lt. Rajnish Sehrawat</h4> 
+        <h2>निखिल</h2>
+        <h4>
+            सुपुत्र श्रीमती बबिता एवं</h4>
+        <h4>स्वर्गीय श्री 
+            संजीव</h4>
+        <h3>-संग-</h3>
+        <h2>मनीषा</h2>
+        <h4>
+            सुपुत्री श्रीमती मुकेश एवं</h4>
+        <h4>स्वर्गीय श्री 
+            रजनीश सहरावत</h4> 
     </div>
 </div>
 <div class="rsvp">
-    <h1>RSVP</h1>
-    <h2>Dingwal</h2>
-    <h2>&</h2>
-    <h2>Entire Family</h2>
     <div class="thnks">
         <img src="thanks.png">
     </div>
+    <h2>डिंगवाल
+    </h2>
+    <h2>एवं</h2>
+    <h2>समस्त परिवार
+    </h2>
 </div>
 </div>
 </body>
@@ -238,10 +258,10 @@ function updateTimer() {
 
   document.getElementById("timer")
     .innerHTML =
-      '<div>' + d + '<span>days</span></div>' +
-      '<div>' + h + '<span>hours</span></div>' +
-      '<div>' + m + '<span>minutes</span></div>' +
-      '<div>' + s + '<span>seconds</span></div>' ;
+      '<div>' + d + '<span>दिन</span></div>' +
+      '<div>' + h + '<span>घंटे</span></div>' +
+      '<div>' + m + '<span>मिनट</span></div>' +
+      '<div>' + s + '<span>सेकंड</span></div>' ;
 }
 setInterval('updateTimer()', 1000 );
 </script>
