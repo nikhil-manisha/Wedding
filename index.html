@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil & Manisha</title>
+    <link rel="icon" href="ganesh.png" type="image/x-icon">
+    <style>
+        body{
+            background-image: url("wall-texture-with-white-details.jpg");
+            font-family: 'Courier New', monospace;
+            color: rgba(0, 0, 0, 0.715);
+        }
+        /* .hidden-audio {
+            display: none;
+        } */
+        .ganesh{
+            height: 20vh;
+            overflow: hidden;
+            text-align: center;
+            animation: scaleIn 1s ease-out 0.5s forwards;
+        }
+        .ganesh img{
+            height: 100%;
+        }
+        .mantra{
+            text-align: center;
+            margin-top: 20px;
+        }
+        @keyframes scaleIn {
+        0% {
+            opacity: 0;
+            transform: scale(.5);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+        @keyframes scaleOut {
+        0% {
+            opacity: 0;
+            transform: scale(2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+
+        .names {
+        font-size: 50px;
+        font-weight: bold;
+        animation: scaleOut 1s ease-out 0.5s forwards;
+        text-align: center;
+        }
+        .sagai{
+            animation: scaleIn 1s ease-out 0.5s forwards; 
+        }
+        .names p{
+            margin: 0;
+        }
+        .names{
+            margin: 40px 0;
+        }
+        #timer {  
+            font-size: 35px;
+            font-weight: 700;
+            text-align: center;
+            
+            div {
+                display: inline-block;
+                min-width: 90px;
+                
+                span {
+                display: block;
+                font-size: .35em;
+                font-weight: 400;
+                }
+            }
+            }
+            .wed-date{
+                text-align: center;
+            }
+        .sagai{
+            height: 30vh;
+            overflow: hidden;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        .nim-image{
+            height: 30vh;
+            overflow: hidden;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        .sagai img{
+            height: 100%;
+        }
+        .nim-image img{
+            height: 100%;
+        }
+        .sagai-text{
+            text-align: center;
+        }
+        .sagai-text h3{
+            margin: 0;
+        }
+        .sagai-main{
+            border: 10px double #857730;
+            margin-top: 5vh;
+        }
+        .nim-text{
+            text-align: center;
+        }
+        .nim-text h2, h4{
+            margin: 0;
+        }
+        .rsvp{
+            border: 10px double #857730;
+            margin-top: 5vh;
+            text-align: center;
+        }
+        .rsvp h1{
+            font-size: 60px;
+        }
+        .rsvp h2{
+            font-size: 30px;
+            margin: 2px;
+        }
+        .thnks{
+            height: 15vh;
+            overflow: hidden;
+            margin-top: 5vh;
+        }
+        .thnks img{
+            height: 100%;
+        }
+        audio {
+      display: none;
+    }
+
+    /* Style the play button */
+    #playButton {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: #3e3e3e63;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <audio id="myAudio" controls loop>
+        <source src="veer_suruli.mp3" type="audio/mpeg">
+      </audio>
+      <button id="playButton" onclick="togglePlay()">🔊</button>
+
+<div class="main">
+    <div class="ganesh">
+        <img src="ganesh.png">
+    </div>
+    <div class="mantra">
+        <p >
+            वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।
+            <br>
+            निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+        </p>
+    </div>
+    <div class="names">
+        <img src="top_leaves.png">
+       <p>Nikhil</p>
+       <p>-&-</p>
+       <p>Manisha</p>
+       <img src="bottom_leaves.png">
+    </div>
+    <div class="wed-date">
+        <div>
+            <h2>6 February 2024</h2>
+        </div>
+        <div id="timer"></div>
+    </div>
+    <div class="sagai-main">
+    <div class="sagai">
+        <img src="sagai.png">
+    </div>
+    <div class="sagai-text">
+            <h2>4 February 2024</h2>
+            <h3>Lunch : 11 Am Onwards</h3>
+            <h3>Sagai : 03 Pm Onwards</h3>
+            <h2>Venue :- Tikri, Meerut</h2>
+    </div>
+</div>
+<div class="nimantran-main">
+    <div class="nim-image">
+        <img src="476-4760075_transparent-wedding-symbol-clipart-line-art-hd-png.png">
+    </div>
+    <div class="nim-text">
+        <h2>Nikhil</h2>
+        <h4>S/o Smt. Babita &</h4>
+        <h4>Lt. Shri. Sanjeev</h4>
+        <h3>-weds-</h3>
+        <h2>Manisha</h2>
+        <h4>D/o Smt. Mukesh &</h4>
+        <h4>Lt. Rajnish Sehrawat</h4> 
+    </div>
+</div>
+<div class="rsvp">
+    <h1>RSVP</h1>
+    <h2>Dingwal</h2>
+    <h2>&</h2>
+    <h2>Entire Family</h2>
+    <div class="thnks">
+        <img src="thanks.png">
+    </div>
+</div>
+</div>
+</body>
+<script>
+function updateTimer() {
+  future  = Date.parse("feb 6, 2024 00:00:00");
+  now     = new Date();
+  diff    = future - now;
+
+  days  = Math.floor( diff / (1000*60*60*24) );
+  hours = Math.floor( diff / (1000*60*60) );
+  mins  = Math.floor( diff / (1000*60) );
+  secs  = Math.floor( diff / 1000 );
+
+  d = days;
+  h = hours - days  * 24;
+  m = mins  - hours * 60;
+  s = secs  - mins  * 60;
+
+  document.getElementById("timer")
+    .innerHTML =
+      '<div>' + d + '<span>days</span></div>' +
+      '<div>' + h + '<span>hours</span></div>' +
+      '<div>' + m + '<span>minutes</span></div>' +
+      '<div>' + s + '<span>seconds</span></div>' ;
+}
+setInterval('updateTimer()', 1000 );
+</script>
+<script>
+    var audio = document.getElementById('myAudio');
+    var playButton = document.getElementById('playButton');
+      audio.play();
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = '🔊'; // Change button icon to pause when playing
+      } else {
+        audio.pause();
+        playButton.innerHTML = '🔇'; // Change button icon to play when paused
+      }
+    }
+  </script>
+</html>
